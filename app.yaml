@@ -1,32 +1,35 @@
-# Copyright 2015 Google Inc. All Rights Reserved.
-application: <project-id>
-version: 1
-runtime: php55
-api_version: 1
+application:    i-fromz
+version:        102
+runtime:        php55
+api_version:    1
 threadsafe: true
 
 handlers:
-- url: /favicon\.ico
-  static_files: public/favicon.ico
-  upload: public/favicon\.ico
+        - url: /favicon\.ico
+          static_files: public/favicon.ico
+          upload: public/favicon\.ico
 
-- url: /.*
-  script: public/index.php
+        #- url: /build
+        # static_dir: public/build
+        # application_readable: true
+
+        - url: /.*
+          script: public/index.php
+
 
 env_variables:
-  # Uncomment the following to enable debug mode.
-  # APP_DEBUG: '1'
-  APP_CIPHER: 'rijndael-128'
-  APP_KEY: 'SomeRandomString32CharactersHere'
+        APP_DEBUG: '1'
+        APP_KEY: 'AppServerForiinbandBypkfromz2015'
+        APP_CIPHER: 'rijndael-128'
 
-  DB_HOST: ':/cloudsql/<project-id>/<instance-id>'
-  DB_USERNAME: 'root'
-  DB_PASSWORD: ''
-  DB_DATABASE: '<database-name>'
+        DB_HOST: '188.166.245.4'
+        DB_USERNAME: 'pkfrom'
+        DB_PASSWORD: 'faster'
+        DB_DATABASE: 'app-engine'
 
-  CACHE_DRIVER: 'memcached'
-  SESSION_DRIVER: 'memcached'
-  MAIL_DRIVER: 'mail'
-  APP_LOG: 'syslog'
-
-  STORAGE_PATH: 'gs://#default#/laravel/storage'
+        CACHE_DRIVER: 'memcached'
+        SESSION_DRIVER: 'memcached'
+        MAIL_DRIVER: 'mail'
+        APP_LOG: 'syslog'
+        STORAGE_PATH: 'gs://i-fromz.appspot.com/i-fromz/storage'
+       # GAE_SKIP_GCS_INIT: false
