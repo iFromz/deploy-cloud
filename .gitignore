@@ -6,3 +6,9 @@ Homestead.json
 /.idea
 prd.yaml
 app.yaml
+/resources/docs
+/public/api
+/build/sami/build
+/build/sami/cache
+.DS_Store
+Thumbs.db

@@ -10,7 +10,24 @@
 | and give it the controller to call when that URI is requested.
 |
 */
-
+/*
 Route::get('/', function () {
     return view('welcome');
 });
+*/
+
+define('DEFAULT_VERSION', 'master');
+
+/**
+ * Convert some text to Markdown...
+ */
+function markdown($text) {
+    return (new ParsedownExtra)->text($text);
+}
+
+get('/', function() {
+    return view('marketing');
+});
+
+get('docs', 'DocsController@showRootPage');
+get('docs/{version}/{page?}', 'DocsController@show');
