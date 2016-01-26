@@ -1,0 +1,20 @@
+{
+  "name": "iinbrand-heroku",
+  "authors": [
+    "Fromz Prajuktar <pkfromz@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "http://github.com/pkfrom",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "vendor/bower_dl/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "typed.js": "~1.1.1"
+  }
+}
