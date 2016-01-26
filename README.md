@@ -10,7 +10,7 @@
 </a>
 
 <a href="">
-    <img src="https://img.shields.io/github/tag/iinbrand/iinbrand-app.svg?style=flat&label=version">
+    <img src="https://img.shields.io/github/tag/iinbrand/iinbrand-deploy.svg?style=flat&label=version">
 </a>
 
 <a href="https://twitter.com/intent/follow?ref_src=twsrc%5Etfw&region=follow_link&screen_name=iinbrand&tw_p=followbutton">
@@ -29,13 +29,7 @@
 </p>
 
 
-## Information [here][link-app]
-
-This is source for [app.iinbrand.com][link-app]
-
-## Official Documentation
-
-Documentation for iinbrand can be found on the [iinbrand website](https://iinbrand.com/docs).
+Laravel simple deploy to GAE & Heroku.
 
 
 ---
