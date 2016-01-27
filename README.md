@@ -1,4 +1,4 @@
-## The iinbrand Application
+## The Deploy Application
 
 <p align="center">
     <img src="https://cdn.iinb.ga/img/logo/logox120.svg"height="130">
